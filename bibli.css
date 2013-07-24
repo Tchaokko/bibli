@@ -1,0 +1,95 @@
+/*
+Commentaire
+*/
+size!
+font-size: small
+font-size: 14px
+font-size: 0.8em
+
+
+Select! 
+.salut = class designer
+#salut = id designer
+* =  all
+h1 p = le p contenu en h1
+h1 + p = le p suivant h1
+a[title] = balise + attribut exact
+a[title="Valeur"] = balise + attribut + valeur exacte
+a[title*="ici"] =  pareil sauf que peut importe la position de ici
+
+Police!
+font-family: police1, police2, police3, police4; = essaie police1 si ya pas police2 ect.
+@font-face
+{
+ font-family: "Masuperpolice";
+ src: url('Masuperpolice.eot');
+}
+
+Italic and shit!
+font-style: valeur; = italic
+font-weight: valeur; =  en gras
+text-decoration: valeur; = soulignement ect.
+
+Alignement!
+text-align: valeur; = alignement (attetion marchre que sur des block de texte)
+float: valeur;
+clear: both; = remet le text en dessous de l image
+
+Couleur!
+color: valeur; = met la selection de la couleur demander
+body----->important!
+background-color = black; =  met le fond en noir
+background-color = rgba(255, 0, 0, 0.5); =  pareil mais avec plus de precision
+color: white; = met tout en les ecriture en blanc
+
+Image
+body----->important
+background-image: url("img"); = met en fond une image
+background-attachment: valeur; = permet de fixer l image par rapport au texte etc.
+background-position: xpx ypx;
+background-repeat: no-repeat; = une seule image
+background: valeur; = combinaison de tout peux mettre plusieurs image avec des ,
+
+Opacité!
+opacity: valeur; entre 0 et 1 permet de gerer la transparence
+
+Bordure!
+border: taille(en px) couleur type; = permet de d ajouter une bordure de son choix
+border-left: taille(en px) couleur type;
+border-right: taille(en px) couleur type;
+border-top: taille(en px) couleur type;
+border-bottom: taille(en px) couleur type;
+border-radius: taille(en px) =  bordure arrondi a utiliser après avoir mis une bordure (angle correspond a en haut a gauche, en haut a droite, en bas a gauche, en bas a droite)
+
+Ombre!
+box-shadow: 6px 6px 0px black; =  ajoute une ombre a une bordure.(3eme valeur = adoucissage, ajouter inset a la couleur pour inverser)
+text-shadow: px px px color;
+
+Dynamisme!
+balise:hover = survol 
+balise:active =  au moment du clic
+balise:focus = element selectionner
+balise:visited =  si le lien a déja été visité
+
+Jouer avec les block!
+width: % = permet de reduire la longueur du bloc au % de la fenêtre
+min-width: px = permet d avoir un bloc de longueur mini
+max-width: px =  permet d avoir un bloc de taille maxi
+-------------------->pareil avec height
+padding: px; = marge interieur de px
+margin: px; marge exterieure de px (option auto pour centrer)
+-------------------> ajouter -top | -bottom | -right | -left pour plus de precision
+overflow: valeur;  = permet de gerer le cas ou il y a trop de texte dans un cadre
+word-wrap: break-word; = permet de couper un mot au cas il depasse du cadre
+vertical-align: valeur; = lire, valeur->top, baseline, middle, bottom, px, %,
+display: valeur;  =  permet de devenir un bloc, un inline ou un inline-block. Marche pas sous ie6 et ie7
+position: absolute | fixed | relative; = permet de positionner l element dans tous les cas, par rapport a toi, par rapport a sa position de base.
+z-index: valeur; p= priorité par rapport aux autre élement(1,2,3...)
+
+text-transform: uppercase; = transforme en majuscule;
+list-style: none; = permet d effacer tout les points lors d une liste
+
+
+
+Table!
+
